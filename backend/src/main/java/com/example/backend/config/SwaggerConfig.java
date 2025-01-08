@@ -1,7 +1,6 @@
 package com.example.backend.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -14,8 +13,7 @@ public class SwaggerConfig {
         return new OpenAPI()
                 .info(new Info().title("SE Project Backend API")
                         .version(appVersion)
-                        .description("软件工程项目前段调用的后端API")
-                        .termsOfService("http://swagger.io/terms/")
-                        .contact(new Contact().email("aaa.com").name("aaa").url("https://aaa.com")));
+                        .description("软件工程项目后端API")
+                        .termsOfService("https://swagger.io/terms/"));
     }
 }
